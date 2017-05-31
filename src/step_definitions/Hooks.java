@@ -24,10 +24,16 @@ public class Hooks {
      * shared state between tests
      */
     public void openBrowser() throws MalformedURLException {
+
         System.out.println("Called openBrowser");
-        driver = new FirefoxDriver();
+
+        driver = new ChromeDriver();
+
+        System.out.println("Called openBrowser ********************************");
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
+
+        System.out.println("Called openBrowser");
     }
 
 

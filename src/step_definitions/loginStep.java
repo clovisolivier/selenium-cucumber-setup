@@ -23,7 +23,8 @@ public class loginStep  {
 
     @Given("^Open login application$")
     public void open_login_application() throws Throwable {
-        driver.get("http://my.lengow.comm");
+        driver.get("http://facebook.com");
+        System.out.println("Open page");
     }
 
     @When("^I sign in$")
